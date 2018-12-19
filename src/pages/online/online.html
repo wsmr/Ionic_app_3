@@ -1,0 +1,27 @@
+<ion-header>
+    <!-- <script type="text/javascript">
+      var slowLoad = window.setTimeout( function() {
+          alert( "the page is taking its sweet time loading" );
+      }, 10 );
+  
+      window.addEventListener( 'load', function() {
+          window.clearTimeout( slowLoad );
+      }, false );
+  </script> -->
+
+  <ion-navbar>
+    <ion-title>Online</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+        <label>Click me: <input type="checkbox" ng-model="checked" ng-init="checked=true" /></label><br/>
+        Show when checked:
+        <span ng-if="checked" class="animate-if">
+          This is removed when the checkbox is unchecked.
+        </span>
+
+</ion-content>
+

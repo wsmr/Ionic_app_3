@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h1>.Home_Page.</h1>
+    
+    {{data1}}
+    <br><br><br>
+    {{data2}}
+    <br><br><br>
+
+  <button ion-button icon-start (click)="click1()">
+    <ion-icon name="star"></ion-icon>
+    Base Page
+  </button>
+  <button ion-button icon-end (click)="click3()">
+      setRoot Page
+    <ion-icon name="star"></ion-icon>
+  </button>
+  
+  <button ion-button (click)="click4()">
+      Event
+    </button>
+  <button ion-button (click)="click6()">
+      Header Hide
+  </button>
+  <button ion-button (click)="click2()">
+      Refresh
+  </button>
+  <button ion-button (click)="click7()">
+      Load Setup
+    </button>
+  <button ion-button (click)="click5()">
+      Actions
+    </button>
+  
+    <ion-footer>
+      <ion-toolbar>
+          <ion-buttons>
+              <ion-row>
+                  <ion-col width-50 style="text-align: center">
+                      <button ion-button round outline (click)="online()">Online</button>
+                  </ion-col>
+              </ion-row>
+          </ion-buttons>
+      </ion-toolbar>
+  </ion-footer>
+  
+</ion-content>
